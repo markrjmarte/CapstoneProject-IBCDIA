@@ -2,29 +2,30 @@ import streamlit as st
  
 def app():
 
-    st.empty()
-    st.markdown("""
-        <style>
-            .topnav {
-                background-color: #0ed145;
-                overflow: hidden;
-                text-color: white;
+    st.empty
+    with st.container():
+         st.markdown("""
+            <style>
+                .topnav {
+                    background-color: #0ed145;
+                    overflow: hidden;
+                    text-color: white;
                     
-            }
-            .topnav a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                font-size: 22px;
-            }
-        </style>
-        <body>
-            <div class="topnav">
-                <a>We are here to provide solution in identifiying Corn diseases</a>
-            </div>
-        </body>
-    """,unsafe_allow_html=True)
+                }
+                .topnav a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    font-size: 22px;
+                }
+            </style>
+            <body>
+                <div class="topnav">
+                    <a>We are here to provide solution in identifiying Corn diseases</a>
+                </div>
+            </body>
+        """,unsafe_allow_html=True)
     st.markdown("""
             <style>
                 #site_content{
