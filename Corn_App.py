@@ -32,7 +32,7 @@ hide_menu_style = """
    """
 st.markdown(hide_menu_style,unsafe_allow_html=True)
 
-image = Image.open('App Images\Header.jpg')
+image = Image.open('CapstoneProject-IBCDIA\App Images\Header.jpg')
 st.image(image,use_column_width=True)
 
 choose = option_menu("", ["Home", "Instruction","Predict Image", "App Description", "Corn Diseases"],
