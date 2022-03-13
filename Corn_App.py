@@ -1,6 +1,5 @@
-
-from App_Pages import Home,Instruction,AppDescription,CornDiseases,Predict
 import streamlit as st
+from App_Pages import Home,Instruction,AppDescription,CornDiseases,Predict
 import streamlit.components.v1 as components
 from streamlit_option_menu import option_menu
 
