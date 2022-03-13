@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 from App_Pages import Home,Instruction,AppDescription,CornDiseases,Predict
 import streamlit.components.v1 as components
 from streamlit_option_menu import option_menu
@@ -31,8 +32,8 @@ hide_menu_style = """
    """
 st.markdown(hide_menu_style,unsafe_allow_html=True)
 
-
-st.image('App Images\Header.jpg',use_column_width=True)
+image = Image.open('App Images\Header.jpg',use_column_width=True)
+st.image(image)
 
 choose = option_menu("", ["Home", "Instruction","Predict Image", "App Description", "Corn Diseases"],
                     icons=['house', 'person lines fill','camera fill', 'app-indicator', 'book'],
