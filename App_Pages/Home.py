@@ -2,7 +2,7 @@ import streamlit as st
  
 def app():
 
-    st.empty
+    st.empty()
     with st.container():
          st.markdown("""
             <style>
