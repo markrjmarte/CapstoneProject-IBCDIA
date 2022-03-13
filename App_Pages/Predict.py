@@ -1,14 +1,5 @@
 import streamlit as st
 from model import predict
-
-import requests
-from streamlit_lottie import st_lottie
-
-def load_lottie(url):
-    r = requests.get(url)
-    if r.status_code !=200:
-        return None
-    return r.json()
  
 def app():
     st.empty
